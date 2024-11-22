@@ -6,6 +6,12 @@ import Contact from "./pages/contact";
 import Test from "./pages/Test";
 import Details from "./propsConcep/Details";
 import User from "./propsConcep/User";
+import Cart from "./responsive/Cart";
+import Home1 from './routerdom/Home';
+import About1 from "./routerdom/About";
+import Contact1 from "./routerdom/Contact";
+import Product from "./routerdom/Product";
+import Error from "./routerdom/Error";
 
 
 function App() {
@@ -21,7 +27,17 @@ function App() {
     //     </Route>
     //   </Routes>
     // </BrowserRouter>
-    <User/>
+   // <Cart/>
+   <BrowserRouter>
+   <Routes>
+    <Route path="/" element={<Home1/>}/>
+    <Route path="/home" element={<Home1/>}/>
+    <Route path="/about" element={<About1/>}/>
+    <Route path="/contact" element={<Contact1/>}/>
+    <Route path="/product" element={<Product/>}/>
+    <Route path="*" element={<Error/>}/>
+   </Routes>
+   </BrowserRouter>
   );
 }
 
