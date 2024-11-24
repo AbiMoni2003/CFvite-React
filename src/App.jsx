@@ -12,32 +12,36 @@ import About1 from "./routerdom/About";
 import Contact1 from "./routerdom/Contact";
 import Product from "./routerdom/Product";
 import Error from "./routerdom/Error";
+import Header from "./component/header";
+
 
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route>
-    //       <Route exact path="/" element={<Home />} />
-    //       <Route exact path="/home" element={<Home />} />
-    //       <Route path="/about" element={<About />} />
-    //       <Route path="/contact" element={<Contact />} />
-    //       <Route path="/Test" element={<Test />} />
-    //     </Route>
-    //   </Routes>
-    // </BrowserRouter>
+    <BrowserRouter>
+    <Header/>
+    
+      <Routes>
+        <Route>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/Test" element={<Test />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
    // <Cart/>
-   <BrowserRouter>
-   <Routes>
-    <Route path="/" element={<Home1/>}/>
-    <Route path="/home" element={<Home1/>}/>
-    <Route path="/about" element={<About1/>}/>
-    <Route path="/contact" element={<Contact1/>}/>
-    <Route path="/product" element={<Product/>}/>
-    <Route path="*" element={<Error/>}/>
-   </Routes>
-   </BrowserRouter>
+  //  <BrowserRouter>
+  //  <Routes>
+  //   <Route path="/" element={<Home1/>}/>
+  //   <Route path="/home" element={<Home1/>}/>
+  //   <Route path="/about" element={<About1/>}/>
+  //   <Route path="/contact" element={<Contact1/>}/>
+  //   <Route path="/product" element={<Product/>}/>
+  //   <Route path="*" element={<Error/>}/>
+  //  </Routes>
+  //  </BrowserRouter>
   );
 }
 

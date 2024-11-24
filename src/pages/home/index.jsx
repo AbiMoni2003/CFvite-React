@@ -8,7 +8,6 @@ import Header from "../../component/header";
 
     return(
         <Fragment>
-            <Header/>
             <h1>Home</h1>
         </Fragment>
     )

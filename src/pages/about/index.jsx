@@ -6,11 +6,11 @@ import Header from "../../component/header";
  function About() {
     return(
         <Fragment>
-            <Header/>
+            
             <div className="about-us">
       <div className="about-us-header">
         <h1>About Us</h1>
-        <p>Your trusted partner in Google.</p>
+        <p>Hey Guys</p>
       </div>
       <div className="about-us-content">
         <section className="mission">
