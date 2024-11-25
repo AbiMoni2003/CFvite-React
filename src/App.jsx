@@ -13,24 +13,26 @@ import Contact1 from "./routerdom/Contact";
 import Product from "./routerdom/Product";
 import Error from "./routerdom/Error";
 import Header from "./component/header";
+import OptCheck from "./otp/OptCheck";
 
 
 
 function App() {
   return (
-    <BrowserRouter>
-    <Header/>
+    <OptCheck/>
+    // <BrowserRouter>
+    // <Header/>
     
-      <Routes>
-        <Route>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/Test" element={<Test />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    //   <Routes>
+    //     <Route>
+    //       <Route exact path="/" element={<Home />} />
+    //       <Route exact path="/home" element={<Home />} />
+    //       <Route path="/about" element={<About />} />
+    //       <Route path="/contact" element={<Contact />} />
+    //       <Route path="/Test" element={<Test />} />
+    //     </Route>
+    //   </Routes>
+    // </BrowserRouter>
    // <Cart/>
   //  <BrowserRouter>
   //  <Routes>
