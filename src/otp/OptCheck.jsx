@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './style.css';
+import '../otp/style.css';
 
 const OptCheck = () => {
   const [step, setStep] = useState(1); // Step 1: Mobile input, Step 2: OTP input
