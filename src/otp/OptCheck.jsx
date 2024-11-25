@@ -48,7 +48,7 @@ const OptCheck = () => {
           <h2>Enter Mobile Number</h2>
           <input
             type="text"
-            placeholder="Mobile Number"
+            placeholder="Mobile Numbe"
             value={mobileNumber}
             onChange={(e) => setMobileNumber(e.target.value)}
             maxLength={10}
