@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../otp/style.css';
+import './style.css';
 
 const OptCheck = () => {
   const [step, setStep] = useState(1); // Step 1: Mobile input, Step 2: OTP input
@@ -48,7 +48,7 @@ const OptCheck = () => {
           <h2>Enter Mobile Number</h2>
           <input
             type="text"
-            placeholder="Mobile Numbe"
+            placeholder="Mobile Number"
             value={mobileNumber}
             onChange={(e) => setMobileNumber(e.target.value)}
             maxLength={10}
